@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">JD Social</string>
+    <string name="id_profile_fragment">Profile Fragment</string>
+    <string name="id_hub_fragment">Hub Fragment</string>
+    <string name="title_activity_main_view">MainView</string>
+
+
+    <string name="menu_profile">Profile</string>
+
 </resources>
