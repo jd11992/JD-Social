@@ -1,2 +1,2 @@
 # JD-Social
-Rest API exercise
+Android - RestAPI exercise
