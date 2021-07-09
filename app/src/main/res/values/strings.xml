@@ -3,8 +3,11 @@
     <string name="id_profile_fragment">Profile Fragment</string>
     <string name="id_hub_fragment">Hub Fragment</string>
     <string name="title_activity_main_view">MainView</string>
-
-
+    <string name="comment_userID">User</string>
+    <string name="comment_userComment">Comments</string>
+    <string name="post_userID">User</string>
+    <string name="post_post">Post</string>
+    <string name="id_albumText">Image description</string>
     <string name="menu_profile">Profile</string>
-
+    <string name="menu_hub">Hub</string>
 </resources>

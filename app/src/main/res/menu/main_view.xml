@@ -2,6 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/id_hub_setting"
+        android:title="@string/menu_hub" />
+    <item
         android:id="@+id/id_profile_setting"
         android:orderInCategory="100"
         android:title="@string/menu_profile"

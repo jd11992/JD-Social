@@ -1,4 +1,4 @@
-package com.jduong.jdsocial.ui.main.view
+package com.jduong.jdsocial.ui.main.view.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
