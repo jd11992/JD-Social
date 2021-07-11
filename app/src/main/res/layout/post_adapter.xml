@@ -26,13 +26,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/post_userID" />
 
+    <TextView
+        android:id="@+id/post_commentsID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_userComment"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_postID" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/comment_Rview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/post_postID" />
+        app:layout_constraintTop_toBottomOf="@+id/post_commentsID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

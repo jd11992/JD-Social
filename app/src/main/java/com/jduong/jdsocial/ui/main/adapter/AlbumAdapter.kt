@@ -7,8 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jduong.jdsocial.R
+import com.jduong.jdsocial.data.model.Album
+import com.jduong.jdsocial.data.model.Comments
+import com.jduong.jdsocial.data.model.User
 
-class AlbumAdapter(val mContext : Context, val imageList : ArrayList<>) :
+class AlbumAdapter(val mContext : Context, val imageList : ArrayList<Album>) :
     RecyclerView.Adapter<AlbumAdapter.MyViewHolder>(){
 
 
@@ -22,6 +25,10 @@ class AlbumAdapter(val mContext : Context, val imageList : ArrayList<>) :
         //Display a text and image if they are available
        if(!imageList.isEmpty()){
            val item = imageList.get(position)
+           val imageTitle : String = item.imageDesc
+           val imageLink : String = item.imageURL
+
+
 
        }
     }

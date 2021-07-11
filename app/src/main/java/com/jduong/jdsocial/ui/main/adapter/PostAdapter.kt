@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jduong.jdsocial.R
+import com.jduong.jdsocial.data.model.Comments
+import com.jduong.jdsocial.data.model.Post
 
-class PostAdapter(val mContext : Context, val postList : ArrayList<>) :
+class PostAdapter(val mContext : Context, val postList : ArrayList<Post>) :
     RecyclerView.Adapter<PostAdapter.MyViewHolder>(){
 
 
@@ -23,7 +25,17 @@ class PostAdapter(val mContext : Context, val postList : ArrayList<>) :
        //Update view if  array list is not empty
         if (!postList.isEmpty()){
            val post = postList.get(position)
+            val postID : Int = post.postID
+            val postString : String = post.userPost
+            val CommentsList : ArrayList<Comments> = ArrayList()
 
+
+            if (holder.commRView.adapter == null){
+                holder.commRView.adapter = CommentsAdapter(CommentsList)
+            }
+
+            holder.userID.text = postID.toString()
+            holder.userPost.text = postString
        }
     }
 
