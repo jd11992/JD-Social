@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/hubFragView">
+
+    <activity
+        android:id="@+id/mainView"
+        android:name="com.jduong.jdsocial.ui.main.view.ui.MainView"
+        android:label="activity_main_view"
+        tools:layout="@layout/activity_main_view" />
+    <fragment
+        android:id="@+id/profileFragView"
+        android:name="com.jduong.jdsocial.ui.main.view.ui.ProfileFragView"
+        android:label="@string/id_profile_fragment"
+        tools:layout="@layout/fragment_profile_frag_view"/>
+    <fragment
+        android:id="@+id/hubFragView"
+        android:name="com.jduong.jdsocial.ui.main.view.ui.PostFragView"
+        android:label="@string/id_hub_fragment"
+        tools:layout="@layout/fragment_hub_frag_view">
+        <action
+            android:id="@+id/action_hubFragView_to_profileFragView"
+            app:destination="@id/profileFragView" />
+    </fragment>
+</navigation>
